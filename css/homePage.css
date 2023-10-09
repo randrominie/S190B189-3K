@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;800&display=swap");
+
+:root {
+  --blue: #543fff;
+  --pink: #f13ea7;
+
+  --mainFont: "Gabarito", cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../../assets/images/homePage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr;
+}
+
+header {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  overflow: hidden;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  max-width: 100px;
+}
+
+.headerPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--blue);
+  font-family: var(--mainFont);
+  font-size: 1.1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.headerPage:hover {
+  color: var(--pink);
+}
+
+@media screen and (max-width: 900px) {
+  .headerPage {
+    font-size: 0.7rem;
+  }
+}
+
+.activePage {
+  font-weight: 800;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 15vw;
+}
+
+.pageImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageImage img {
+  width: auto;
+  height: auto;
+  max-height: 80vh;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  margin-left: 7vw;
+  color: var(--blue);
+  font-family: var(--mainFont);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+
+  text-align: left;
+  font-size: 4rem;
+  font-weight: bold;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.description {
+  font-size: 1.2rem;
+}
+
+.startButton {
+  width: 25%;
+  height: 25%;
+  min-height: 50px;
+  min-width: 150px;
+
+  background-color: var(--pink);
+  color: white;
+  border: 0;
+  border-radius: 20px;
+
+  font-family: var(--mainFont);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.startButton:hover {
+  background-color: var(--blue); /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover */
+}
