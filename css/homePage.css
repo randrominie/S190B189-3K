@@ -10,7 +10,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../../assets/images/homePage.png");
+  /* background-image: url("../../assets/images/homePage.png"); */
+  background-image: url("../assets/images/homePage.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -126,6 +127,8 @@ main {
 }
 
 .startButton:hover {
-  background-color: var(--blue); /* Change background color on hover */
-  color: #ffffff; /* Change text color on hover */
+  background-color: var(--blue);
+  /* Change background color on hover */
+  color: #ffffff;
+  /* Change text color on hover */
 }
