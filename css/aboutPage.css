@@ -1,17 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;800&display=swap");
-
-:root {
-  --blue: #543fff;
-  --pink: #f13ea7;
-
-  --mainFont: "Gabarito", cursive;
-}
-
-html {
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
 .team-name {
   font-family: var(--mainFont);
   color: var(--blue);
@@ -69,17 +55,4 @@ html {
 .person-group {
   font-family: var(--mainFont);
   color: var(--blue);
-}
-
-.link {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.link:visited {
-  color: var(--blue);
-}
-
-.link:hover {
-  color: var(--pink);
 }

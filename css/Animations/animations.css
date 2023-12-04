@@ -1,0 +1,17 @@
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(5vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(-5vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}

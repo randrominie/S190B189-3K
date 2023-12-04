@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/aboutPage.css" />
+    <link rel="stylesheet" href="./css/generalStyles.css" />
+    <link rel="stylesheet" href="./css/Animations/animations.css" />
     <link rel="stylesheet" href="css/homePage.css" />
+
+    <link rel="stylesheet" href="./css/Components/header.css" />
     <title>Edukacinis Žaidimas</title>
   </head>
   <body>
@@ -14,29 +17,25 @@
           <div class="logo">
             <img src="assets/images/logo.png" alt="logo" />
           </div>
-          <div class="headerPage activePage">
-            <a class="link" href="index.html">Žaidimas</a>
-          </div>
-          <div class="headerPage">
-            <a class="link" href="about.html">Apie mus</a>
-          </div>
-          <div class="headerPage">
-            <a class="link" href="rules.html"> Taisyklės </a>
-          </div>
+          <a class="link active" href="index.html">Žaidimas</a>
+          <a class="link" href="about.html">Apie mus</a>
+          <a class="link" href="rules.html"> Taisyklės </a>
         </header>
         <main>
           <div class="content">
             <div class="title">DI VERSLO<br />Pradžiamokslis</div>
             <div class="description">
-              Išmok, kaip reikia priimti tinkamus sprendimus savo verslui, kaip
-              investuoti į DI integravimą verslo procesuose
+              <p>
+                Išmok, kaip reikia priimti tinkamus sprendimus savo verslui,
+                kaip investuoti į DI integravimą verslo procesuose
+              </p>
+              <a href="info.html">
+                <button class="startButton">
+                  <img src="assets/icons/controller.png" alt="Controller" />
+                  Žaisti
+                </button>
+              </a>
             </div>
-            <a href="info.html">
-              <button class="startButton">
-                <img src="assets/icons/controller.png" alt="Controller" />
-                Žaisti
-              </button>
-            </a>
           </div>
           <div class="pageImage">
             <img src="assets/images/homepage_iliustracija.png" alt="photo" />
