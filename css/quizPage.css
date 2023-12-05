@@ -15,7 +15,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../assets/images/quiz_background.png");
+  background-image: url("../assets/images/backgrounds/quiz_background.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
