@@ -1,0 +1,148 @@
+html {
+  overflow-y: hidden;
+}
+
+body {
+  background-image: url("../assets/images/selectPage.png");
+  background-size: cover;
+
+  overflow-y: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 85vh;
+}
+
+.selections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr, repeat(2, 1fr);
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 40px;
+
+  width: 50vw;
+
+  animation-name: slideFromBottom;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  & h1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+
+    font-family: var(--mainFont);
+    font-size: 2rem;
+    color: var(--blue);
+    text-align: center;
+  }
+
+  & .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40vw;
+    height: 20vh;
+
+    position: relative;
+    transform: translateY(0px);
+    transition: transform 0.3s ease-out;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    & h2 {
+      font-family: var(--mainFont);
+      color: white;
+      text-align: center;
+      font-size: 2.5rem;
+
+      display: block;
+      height: fit-content;
+      padding: 10px 30px;
+      border-radius: inherit;
+
+      background-color: var(--blue);
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      transition: transform 0.3s 0.15s ease-out;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: -1;
+
+      background-color: var(--pink);
+      border-radius: inherit;
+
+      opacity: 0;
+      transition: opacity 0.3s ease-out;
+    }
+
+    &:hover::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: -1;
+
+      background-color: var(--pink);
+      opacity: 1;
+      filter: opacity(0.7);
+      border-radius: inherit;
+    }
+  }
+
+  & .card::after {
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -2;
+
+    background-position: center;
+    filter: brightness(0.7);
+    box-shadow: 4px 3px 12px 0px rgba(55, 55, 55, 0.22);
+
+    border-radius: inherit;
+    transition: transform 1s ease-out;
+  }
+
+  & .card:hover::after {
+    filter: blur(2px);
+    transform: scale(1.1);
+  }
+
+  & .card.carService::after {
+    background-image: url("../assets/images/backgrounds/Car-service.jpg");
+  }
+  & .card.hotel::after {
+    background-image: url("../assets/images/backgrounds/hotel.jpg");
+  }
+  & .card.eShop::after {
+    background-image: url("../assets/images/backgrounds/eshop.jpg");
+  }
+  & .card.hospital::after {
+    background-image: url("../assets/images/backgrounds/hospital.jpg");
+  }
+}
