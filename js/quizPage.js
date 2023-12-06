@@ -160,6 +160,10 @@ const Questions = [
   },
 ];
 
+const urlParams = new URLSearchParams(window.location.search);
+const selectedCategory = urlParams.get("selected");
+alert(selectedCategory);
+
 let questionIndex = 0;
 let score = 0;
 
