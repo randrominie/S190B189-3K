@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/quizPage.css" />
+    <link rel="stylesheet" href="./css/quizPage.css" />
+    <link rel="stylesheet" href="./css/Animations/animations.css" />
   </head>
   <body>
     <main>
@@ -12,14 +13,19 @@
         <p class="question"></p>
         <div class="answers"></div>
       </div>
-      <img src="/assets/images/Partnership-amico.svg" alt="Ilustration" />
+      <img alt="Ilustration" />
     </main>
     <footer>
-      <button class="basicButton nextQuestion" onclick="nextQuestion()">
+      <button
+        class="basicButton nextQuestion"
+        disabled
+        onclick="nextQuestion()"
+      >
         Kitas klausimas
       </button>
     </footer>
   </body>
-  <script src="./js/selectOptions.js"></script>
-  <script src="js/quizPage.js"></script>
+  <script type="module" src="./js/questions.js"></script>
+  <script type="module" src="./js/selectOptions.js"></script>
+  <script type="module" src="./js/quizPage.js"></script>
 </html>
