@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/selectPage.css" />
     <link rel="stylesheet" href="./css/Animations/animations.css" />
     <link rel="stylesheet" href="./css/Components/exitButton.css" />
+    <link rel="stylesheet" href="./css/Components/modal.css" />
 
     <title>Įmonės pasirinkimas</title>
   </head>
@@ -27,12 +28,30 @@
           <h2>Viešbutis</h2>
         </div>
         <div class="card eShop">
-          <h2>Elektroninės prekybos platforma</h2>
+          <h2>Elektroninė prekyba</h2>
         </div>
         <div class="card hospital">
           <h2>Sveikatos priežiūros įstaiga</h2>
         </div>
       </section>
+      <dialog>
+        <section class="content">
+          <section class="description">
+            <h1></h1>
+            <p></p>
+            <h2>Pagrindinės įmonės problemos</h2>
+            <p></p>
+          </section>
+          <img src="" alt="No Image loaded" />
+        </section>
+        <div class="buttons">
+          <button data-close-modal>Atšaukti pasirinkimą</button>
+          <a>
+            <button class="start">Pradėti žaidimą</button>
+          </a>
+        </div>
+      </dialog>
     </main>
   </body>
+  <script src="./js/selectOptions.js"></script>
 </html>
