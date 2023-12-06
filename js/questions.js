@@ -6,7 +6,7 @@ export const HotelQuestions = [
         text: "Analizuojant svečių elgseną ir prognozuojant užsakymų srautus",
         isCorrect: true,
         explanation:
-          "Analizuojant svečių elgseną ir prognozuojant užsakymų srautus yra veiksmingas būdas optimizuoti rezervacijų sistemą.",
+          "Analizuojant svečių elgseną ir prognozuojant užsakymų srautus, galima efektyviai optimizuoti rezervacijų sistemą, nustatant optimalius laikotarpius ir kainas.",
       },
       {
         text: "Pakeičiant rezervacijų sistemą socialiniais tinklais",
@@ -34,7 +34,7 @@ export const HotelQuestions = [
         text: "Panaudoti chatbotus klientų aptarnavime 24/7",
         isCorrect: true,
         explanation:
-          "Chatbotai gali efektyviai aptarnauti klientus bet kuriuo paros metu.",
+          "Chatbot'ų panaudojimas klientų aptarnavime leidžia viešbučiui efektyviai ir nuolatos bendrauti su klientais, teikiant jiems reikiamą informaciją ir sprendžiant problemas.",
       },
       {
         text: "Stebėti svečių pokalbius, kad sužinoti jų slaptus pageidavimus",
@@ -68,7 +68,7 @@ export const HotelQuestions = [
         text: "Stebint konkurentų kainas ir automatiškai pritaikant savo kainas",
         isCorrect: true,
         explanation:
-          "Stebint konkurentus, viešbutis gali dinamiškai prisitaikyti prie rinkos sąlygų.",
+          "Konkurentų kainų stebėsena leidžia viešbučiui dinamiškai prisitaikyti prie rinkos sąlygų, užtikrinant optimalias kainas.",
       },
       {
         text: "Pasiūlyti svečiams specialius pasiūlymus, pagrįstus orų prognozėmis",
@@ -91,7 +91,7 @@ export const HotelQuestions = [
         text: "Prognozuoti energijos suvartojimą ir optimizuoti šildymo/aušinimo sistemas",
         isCorrect: true,
         explanation:
-          "Prognozuojant energijos suvartojimą, viešbutis gali efektyviai valdyti šildymo ir aušinimo sistemas.",
+          "Energijos suvartojimo prognozės leidžia viešbučiui efektyviai valdyti energijos naudojimą, prisidedant prie aplinkos apsaugos",
       },
       {
         text: "Automatiškai keisti kambario spalvas pagal svečių nuotaiką",
@@ -127,7 +127,8 @@ export const CarQuestions = [
       {
         text: "Gamybos linijos optimizacija",
         isCorrect: true,
-        explanation: "-",
+        explanation:
+          "Dirbtinio intelekto įdiegimas automobilių gamyklos linijoje yra ypač naudingas, nes tai leidžia efektyviau organizuoti gamybą ir sumažinti gamybos kaštus.",
       },
       {
         text: "Elektroninės prekybos analizė",
@@ -165,7 +166,8 @@ export const CarQuestions = [
       {
         text: "Detalių tikslumo patikra",
         isCorrect: true,
-        explanation: "-",
+        explanation:
+          "Detalių tikslumo patikra su dirbtiniu intelektu leidžia efektyviai identifikuoti ir pašalinti galimus gamybos defektus, užtikrinant aukštą produktų kokybę.",
       },
     ],
   },
@@ -186,7 +188,8 @@ export const CarQuestions = [
       {
         text: "Optimizuojant tiekimo grandinę",
         isCorrect: true,
-        explanation: "-",
+        explanation:
+          "Tiekimo grandinės optimizavimas su dirbtiniu intelektu gali racionalizuoti logistiką, sumažinti laiką tarp žaliavų gavimo ir galutinio produkto sukūrimo, padidinant gamybos efektyvumą.",
       },
       {
         text: "Padedant gydytojams diagnozuoti ligas",
@@ -207,7 +210,8 @@ export const CarQuestions = [
       {
         text: "Gamybos defektų nustatymui",
         isCorrect: true,
-        explanation: "-",
+        explanation:
+          "Gamybos defektų nustatymas yra sritis, kurioje dirbtinis intelektas gali būti naudojamas efektyviai identifikuojant ir sprendžiant gamybos procesų problemas.",
       },
       {
         text: "Klientų elgsenos analizei",
@@ -233,7 +237,8 @@ export const CarQuestions = [
       {
         text: "Automatizuotas gamybos procesas",
         isCorrect: true,
-        explanation: "-",
+        explanation:
+          "Automatizuotas gamybos procesas yra svarbus ateities automobilių gamyboje, kuris leis efektyviau ir greičiau kurti transporto priemones.",
       },
       {
         text: "Klientų aptarnavimo chatbotai",
@@ -265,7 +270,8 @@ export const CarQuestions = [
       {
         text: "Gamyklos techninė modernizacija",
         isCorrect: true,
-        explanation: "-",
+        explanation:
+          "Gamyklos techninė modernizacija bus didžiausių išlaidų reikalaujantis procesas, kuris bus būtinas diegiant dirbtinį intelektą į 'Automanijos' veiklą ir užtikrins, kad infrastruktūra būtų pasiruošusi naujovėms.",
       },
       {
         text: "Komunikacija ir darbuotojų mokymas apie AI",
@@ -284,7 +290,7 @@ export const EshopQuestions = [
         text: "Naudojant sentimentų analizę klientų atsiliepimams vertinti",
         isCorrect: true,
         explanation:
-          "Naudojant sentimentų analizę, platforma gali geriau suprasti klientų nuotaikas ir pirkimo motyvacijas.",
+          "Naudojant sentimentų analizę, platforma gali geriau suprasti klientų nuotaikas ir pirkimo motyvus.",
       },
       {
         text: "Stengiantis pakeisti svetainės spalvų schemą pagal mados tendencijas",
@@ -313,7 +319,7 @@ export const EshopQuestions = [
         text: "Siūlydami vartotojams virtualius 'fitting' kambarius",
         isCorrect: true,
         explanation:
-          "Siūlydami vartotojams virtualius 'fitting' kambarius, platforma gali padėti sumažinti klaidingų pirkimų atvejus.",
+          "Siūlydami vartotojams virtualius 'fitting' kambarius, platforma gali padėti sumažinti klaidingų pirkimų atvejų skaičių.",
       },
       {
         text: "Nustatydami, kokias prekes klientai dažniausiai perka kartu",
@@ -342,7 +348,7 @@ export const EshopQuestions = [
         text: "Analizuojant pardavimų duomenis ir prognozuojant populiariausias prekes",
         isCorrect: true,
         explanation:
-          "Analizuojant pardavimų duomenis, platforma gali prognozuoti ir suprasti populiariausias prekes bei klientų poreikius.",
+          "Analizuojant pardavimų duomenis, platforma gali prognozuoti ir identifikuoti populiariausias prekes bei klientų poreikius.",
       },
       {
         text: "Kuriant socialinius tinklus",
@@ -375,9 +381,9 @@ export const EshopQuestions = [
       },
       {
         text: "Sukurti virtualią realybę, kurioje klientai gali apžiūrėti prekes",
-        isCorrect: true,
+        isCorrect: false,
         explanation:
-          "Virtuali realybė gali pagerinti klientų patirtį, leidžiant jiems virtualiai apžiūrėti prekes prieš pirkdami.",
+          "Virtuali realybė gali būti įdomi naujovė, bet tai reikalauja didelių investicijų ir gali netinkamai veikti visiems klientams.",
       },
       {
         text: "Siūlyti klientams nemokamus produktus",

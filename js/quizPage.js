@@ -57,12 +57,13 @@ function evaluateAnswer(userSelection) {
   const correctAnswer = Questions[questionIndex].a.find(
     (answer) => answer.isCorrect
   );
-
-  displayAnswers(correctAnswer);
+  let isCorrect = false;
   if (selectedAnswer.innerText === correctAnswer.text) {
+    isCorrect = true;
     score++;
   }
 
+  displayAnswers(selectedAnswer, isCorrect);
   revealNextButton();
 }
 
@@ -76,6 +77,7 @@ function hideNextButton() {
 
 function nextQuestion() {
   button.disabled = true;
+  button.style.cursor = "default";
   hideNextButton();
   if (questionIndex < Questions.length - 1) {
     questionIndex++;
@@ -90,17 +92,32 @@ function nextQuestion() {
 
 window.nextQuestion = nextQuestion;
 
-function displayAnswers(correctAnswer) {
+const modal = document.querySelector("dialog");
+const closeButton = document.querySelector("[data-close-modal]");
+
+closeButton.addEventListener("click", () => {
+  modal.close();
+  modal.removeAttribute("class");
+});
+
+function displayAnswers(selectedButton, isCorrect) {
+  if (isCorrect) {
+    selectedButton.style.backgroundColor = greenColor;
+    modal.classList.add("correct");
+  } else {
+    selectedButton.style.backgroundColor = redColor;
+    modal.classList.add("false");
+  }
+  loadExplanation(selectedButton, isCorrect);
+  modal.showModal();
+
   const answerButtons = options.querySelectorAll(".answer");
-  answerButtons.forEach((answerButton) => {
-    if (answerButton.innerText === correctAnswer.text) {
-      answerButton.style.backgroundColor = greenColor;
-    } else {
-      answerButton.style.backgroundColor = redColor;
-    }
+  answerButtons.forEach((button) => {
+    button.disabled = true;
   });
 
   button.disabled = false;
+  button.style.cursor = "pointer";
 }
 
 function loadResults() {
@@ -160,6 +177,22 @@ function loadResults() {
   htmlBlock.appendChild(message);
   htmlBlock.appendChild(results);
   htmlBlock.appendChild(exitButtons);
+}
+
+function loadExplanation(selectedAnswer, isCorrect) {
+  const header = document.querySelector("dialog h1");
+  const explanation = document.querySelector("dialog p");
+
+  header.innerHTML = isCorrect ? "Teisingai!" : "Neteisingai";
+
+  const selectedQuestion = Questions[questionIndex];
+  const selectedAnswerData = selectedQuestion.a.find(
+    (answer) => answer.text === selectedAnswer.innerText
+  );
+
+  explanation.innerHTML = selectedAnswerData
+    ? selectedAnswerData.explanation || "No explanation available"
+    : "No explanation available";
 }
 
 loadQues();

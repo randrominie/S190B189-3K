@@ -169,3 +169,8 @@ dialog {
     }
   }
 }
+
+dialog::backdrop {
+  background: #9184f5;
+  opacity: 0.3;
+}
