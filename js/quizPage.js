@@ -1,168 +1,26 @@
-const Questions = [
-  {
-    q: "Kokia pagrindinė priežastis įdiegti DI automobilių gamykloje?",
-    a: [
-      {
-        text: "Automatinės rezervacijos sistemos",
-        isCorrect: false,
-        explanation:
-          "Automobilių gamykloje svarbiau optimizuoti gamybos procesus nei rezervacijas",
-      },
-      {
-        text: "Gamybos linijos optimizacija",
-        isCorrect: true,
-        explanation: "-",
-      },
-      {
-        text: "Elektroninės prekybos analizė",
-        isCorrect: false,
-        explanation:
-          "Tai labiau tinka elektroninės prekybos įmonėms, o ne gamykloms",
-      },
-      {
-        text: "Pacientų duomenų analizė",
-        isCorrect: false,
-        explanation:
-          "Tai yra susiję su sveikatos priežiūra, o ne automobilių gamyb",
-      },
-    ],
-  },
-  {
-    q: "Kokiai funkcijai gamykloje labiausiai tiktų DI?",
-    a: [
-      {
-        text: "Klientų aptarnavimas",
-        isCorrect: false,
-        explanation:
-          "Nors AI gali padėti aptarnavime, pagrindinis privalumas gamykloje yra gamybos optimizavimas.",
-      },
-      {
-        text: "Internetinės reklamos",
-        isCorrect: false,
-        explanation: "Tai nėra pagrindinė gamyklos funkcija",
-      },
-      {
-        text: "Gydomųjų procedūrų rekomendacijos",
-        isCorrect: false,
-        explanation: "Tai nesusiję su automobilių gamyba.",
-      },
-      {
-        text: "Detalių tikslumo patikra",
-        isCorrect: true,
-        explanation: "-",
-      },
-    ],
-  },
-  {
-    q: "Kaip DI galėtų padėti pagerinti gamybos efektyvumą?",
-    a: [
-      {
-        text: "Pateikiant asmenines nuolaidas klientams",
-        isCorrect: false,
-        explanation:
-          " tai gali padėti gauti daugiau pardavimų, tačiau šiuo atveju investuoti į tiekimo grandinės optimizavimą su DI būtų tikslingiausia.",
-      },
-      {
-        text: "Analizuojant klientų atsiliepimus",
-        isCorrect: false,
-        explanation: "Tai nėra pagrindinė gamyklos funkcija.",
-      },
-      {
-        text: "Optimizuojant tiekimo grandinę",
-        isCorrect: true,
-        explanation: "-",
-      },
-      {
-        text: "Padedant gydytojams diagnozuoti ligas",
-        isCorrect: false,
-        explanation: "Tai nesusiję su automobilių gamyba.",
-      },
-    ],
-  },
-  {
-    q: "Kokiai problemai išspręsti gamykloje labiausiai reikėtų DI?",
-    a: [
-      {
-        text: "Klaidingoms interneto svetainės funkcijoms ištaisyti",
-        isCorrect: false,
-        explanation:
-          "Galbūt įmonė turi savo svetainę, tačiau šiuo atveju prioritetas yra defektų nustatymas.",
-      },
-      {
-        text: "Gamybos defektų nustatymui",
-        isCorrect: true,
-        explanation: "-",
-      },
-      {
-        text: "Klientų elgsenos analizei",
-        isCorrect: false,
-        explanation: "Tai nėra pagrindinė gamyklos funkcija.",
-      },
-      {
-        text: "Gydomųjų procedūrų planavimui",
-        isCorrect: false,
-        explanation: "Tai nesusiję su automobilių gamyba.",
-      },
-    ],
-  },
-  {
-    q: "Kokį DI taikymą matote ateityje automobilių gamyklose?",
-    a: [
-      {
-        text: "Automobilių pardavimų prognozavimas",
-        isCorrect: false,
-        explanation:
-          "Tai galėtų būti aktualu bei naudinga įmonei, bet gamyklose svarbiausia yra gerinti patį gamybos procesą.",
-      },
-      {
-        text: "Automatizuotas gamybos procesas",
-        isCorrect: true,
-        explanation: "-",
-      },
-      {
-        text: "Klientų aptarnavimo chatbotai",
-        isCorrect: false,
-        explanation: "Tai nėra pagrindinė gamyklos funkcija.",
-      },
-      {
-        text: "Pacientų gydymo planavimas",
-        isCorrect: false,
-        explanation: "Tai nesusiję su automobilių gamyba.",
-      },
-    ],
-  },
-  {
-    q: "Kokios didžiausios išlaidos, su kuriomis susidurs 'Automanija' diegdama DI į savo veiklą?",
-    a: [
-      {
-        text: "Programinės įrangos licencijavimas ir atnaujinimai",
-        isCorrect: false,
-        explanation:
-          "Nors tai gali būti brangu, techninė infrastruktūra yra esminė ir gali kainuoti daugiau.",
-      },
-      {
-        text: "Aukšto lygio specialistų mokymas ir samdymas",
-        isCorrect: false,
-        explanation:
-          "Nors svarbu, gamyklos modernizacija gali būti didžiausia išlaida.",
-      },
-      {
-        text: "Gamyklos techninė modernizacija",
-        isCorrect: true,
-        explanation: "-",
-      },
-      {
-        text: "Komunikacija ir darbuotojų mokymas apie AI",
-        isCorrect: false,
-        explanation: "Tai nėra brangiausia dalis AI integracijos.",
-      },
-    ],
-  },
-];
+import * as QuestionSets from "./questions.js";
 
 const urlParams = new URLSearchParams(window.location.search);
 const selectedCategory = urlParams.get("selected");
-alert(selectedCategory);
+
+let Questions;
+
+switch (selectedCategory) {
+  case "Cars":
+    Questions = QuestionSets.CarQuestions;
+    break;
+  case "Hotel":
+    Questions = QuestionSets.HotelQuestions;
+    break;
+  case "Eshop":
+    Questions = QuestionSets.EshopQuestions;
+    break;
+  case "Hospital":
+    Questions = QuestionSets.HospitalQuestions;
+    break;
+  default:
+    console.error("Unknown category:", selectedCategory);
+}
 
 let questionIndex = 0;
 let score = 0;
@@ -170,6 +28,9 @@ let score = 0;
 const header = document.querySelector(".questionHeader");
 const question = document.querySelector(".question");
 const options = document.querySelector(".answers");
+
+const image = document.querySelector("img");
+image.src = `../assets/illustrations/${selectedCategory}2.svg`;
 
 const button = document.querySelector(".nextQuestion");
 
@@ -196,12 +57,13 @@ function evaluateAnswer(userSelection) {
   const correctAnswer = Questions[questionIndex].a.find(
     (answer) => answer.isCorrect
   );
-
-  displayAnswers(correctAnswer);
+  let isCorrect = false;
   if (selectedAnswer.innerText === correctAnswer.text) {
+    isCorrect = true;
     score++;
   }
 
+  displayAnswers(selectedAnswer, isCorrect);
   revealNextButton();
 }
 
@@ -214,6 +76,8 @@ function hideNextButton() {
 }
 
 function nextQuestion() {
+  button.disabled = true;
+  button.style.cursor = "default";
   hideNextButton();
   if (questionIndex < Questions.length - 1) {
     questionIndex++;
@@ -226,15 +90,34 @@ function nextQuestion() {
   }
 }
 
-function displayAnswers(correctAnswer) {
+window.nextQuestion = nextQuestion;
+
+const modal = document.querySelector("dialog");
+const closeButton = document.querySelector("[data-close-modal]");
+
+closeButton.addEventListener("click", () => {
+  modal.close();
+  modal.removeAttribute("class");
+});
+
+function displayAnswers(selectedButton, isCorrect) {
+  if (isCorrect) {
+    selectedButton.style.backgroundColor = greenColor;
+    modal.classList.add("correct");
+  } else {
+    selectedButton.style.backgroundColor = redColor;
+    modal.classList.add("false");
+  }
+  loadExplanation(selectedButton, isCorrect);
+  modal.showModal();
+
   const answerButtons = options.querySelectorAll(".answer");
-  answerButtons.forEach((answerButton) => {
-    if (answerButton.innerText === correctAnswer.text) {
-      answerButton.style.backgroundColor = greenColor;
-    } else {
-      answerButton.style.backgroundColor = redColor;
-    }
+  answerButtons.forEach((button) => {
+    button.disabled = true;
   });
+
+  button.disabled = false;
+  button.style.cursor = "pointer";
 }
 
 function loadResults() {
@@ -272,7 +155,7 @@ function loadResults() {
   const homeLink = document.createElement("a");
   const homeButton = document.createElement("button");
 
-  restartLink.href = "quizPage.html";
+  restartLink.href = `../quizPage.html?selected=${selectedCategory}`;
   homeLink.href = "index.html";
 
   restartButton.classList.add("basicButton", "smallerButtons");
@@ -294,6 +177,22 @@ function loadResults() {
   htmlBlock.appendChild(message);
   htmlBlock.appendChild(results);
   htmlBlock.appendChild(exitButtons);
+}
+
+function loadExplanation(selectedAnswer, isCorrect) {
+  const header = document.querySelector("dialog h1");
+  const explanation = document.querySelector("dialog p");
+
+  header.innerHTML = isCorrect ? "Teisingai!" : "Neteisingai";
+
+  const selectedQuestion = Questions[questionIndex];
+  const selectedAnswerData = selectedQuestion.a.find(
+    (answer) => answer.text === selectedAnswer.innerText
+  );
+
+  explanation.innerHTML = selectedAnswerData
+    ? selectedAnswerData.explanation || "No explanation available"
+    : "No explanation available";
 }
 
 loadQues();
