@@ -40,7 +40,7 @@ closeButton.addEventListener("click", () => {
 });
 
 startButton.addEventListener("click", () => {
-  document.location.href = `../quizPage.html?selected=${selectedBusiness}`;
+  document.location.href = `/S190B189-3K/quizPage.html?selected=${selectedBusiness}`;
 });
 
 /* Description elements*/
