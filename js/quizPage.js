@@ -30,7 +30,7 @@ const question = document.querySelector(".question");
 const options = document.querySelector(".answers");
 
 const image = document.querySelector("img");
-image.src = `../assets/illustrations/${selectedCategory}2.svg`;
+image.src = `/S190B189-3K/assets/illustrations/${selectedCategory}2.svg`;
 
 const button = document.querySelector(".nextQuestion");
 
