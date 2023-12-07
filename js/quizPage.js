@@ -155,7 +155,7 @@ function loadResults() {
   const homeLink = document.createElement("a");
   const homeButton = document.createElement("button");
 
-  restartLink.href = `../quizPage.html?selected=${selectedCategory}`;
+  restartLink.href = `/S190B189-3K/quizPage.html?selected=${selectedCategory}`;
   homeLink.href = "index.html";
 
   restartButton.classList.add("basicButton", "smallerButtons");
