@@ -73,7 +73,7 @@ function loadData() {
 
       <span class="bold">Rinkos pokyčiai:</span> Poreikis
       ekologiškesniems ir technologiškai pažangesniems automobiliams
-      reiškia, kad gamykla turi greitai adaptuotis arba prarasti rinkos
+      reiškia, kad gamykla turi greitai adaptuotis arba praras rinkos
       dalį.<br />`;
       image.src = "/S190B189-3K/assets/illustrations/Car.svg";
       break;

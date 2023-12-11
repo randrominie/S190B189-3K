@@ -31,24 +31,24 @@ export const HotelQuestions = [
     q: "Kaip 'Hotela' gali naudoti dirbtinį intelektą gerinant klientų aptarnavimą?",
     a: [
       {
-        text: "Panaudoti chatbotus klientų aptarnavime 24/7",
+        text: "Panaudojant chatbotus klientų aptarnavime 24/7",
         isCorrect: true,
         explanation:
           "Chatbot'ų panaudojimas klientų aptarnavime leidžia viešbučiui efektyviai ir nuolatos bendrauti su klientais, teikiant jiems reikiamą informaciją ir sprendžiant problemas.",
       },
       {
-        text: "Stebėti svečių pokalbius, kad sužinotų jų slaptus pageidavimus",
+        text: "Stebint svečių pokalbius, kad sužinotų jų slaptus pageidavimus",
         isCorrect: false,
         explanation: "Tai labai neetiška ir pažeidžia svečių privatumą.",
       },
       {
-        text: "Naudoti kliento veido atpažinimo sistemas liftuose",
+        text: "Naudojant kliento veido atpažinimo sistemas liftuose",
         isCorrect: false,
         explanation:
           "Tai gali sukelti privatumo problemas ir gali būti laikoma invaziniu veiksmu be kliento sutikimo.",
       },
       {
-        text: "Pakeisti visus darbuotojus robotais",
+        text: "Pakeičiant visus darbuotojus robotais",
         isCorrect: false,
         explanation:
           "Per daug radikalus žingsnis, gali sumažinti aptarnavimo kokybę.",
@@ -71,13 +71,13 @@ export const HotelQuestions = [
           "Konkurentų kainų stebėsena leidžia viešbučiui dinamiškai prisitaikyti prie rinkos sąlygų, užtikrinant optimalias kainas.",
       },
       {
-        text: "Pasiūlyti svečiams specialius pasiūlymus, pagrįstus orų prognozėmis",
+        text: "Siūlant svečiams specialius pasiūlymus, pagrįstus orų prognozėmis",
         isCorrect: false,
         explanation:
           "Gali būti naudinga paslauga, bet ji yra orientuota į individualų kliento aptarnavimą, o ne patį kainodaros optimizavimą.",
       },
       {
-        text: "Keičiant kainas kiekvieną dieną pagal mėnesio fazę",
+        text: "Keičiant kainas kiekvieną dieną pagal mėnulio fazę",
         isCorrect: false,
         explanation:
           "Nėra efektyvus būdas optimizuoti kainodarą, nes ji nėra paremta konkrečiais duomenimis ar konkurentų kainomis.",
@@ -88,24 +88,24 @@ export const HotelQuestions = [
     q: "Kaip 'Hotela' galėtų naudoti DI, siekiant tapti ekologiškesniu ir atsakingesniu viešbučiu?",
     a: [
       {
-        text: "Prognozuoti energijos suvartojimą ir optimizuoti šildymo/aušinimo sistemas",
+        text: "Prognozuojant energijos suvartojimą ir optimizuojant šildymo/aušinimo sistemas",
         isCorrect: true,
         explanation:
           "Energijos suvartojimo prognozės leidžia viešbučiui efektyviai valdyti energijos naudojimą, prisidedant prie aplinkos apsaugos.",
       },
       {
-        text: "Automatiškai keisti kambario spalvas pagal svečių nuotaiką",
+        text: "Automatiškai keičiant kambario spalvas pagal svečių nuotaiką",
         isCorrect: false,
         explanation: "Brangu ir nenaudinga iš ekologinės perspektyvos.",
       },
       {
-        text: "Pasiūlyti svečiams virtualias ekskursijas po viešbutį",
+        text: "Pasiūlant svečiams virtualias ekskursijas po viešbutį",
         isCorrect: false,
         explanation:
           "Gali padėti sumažinti spausdinimo ir popierinių brošiūrų naudojimą, bet tai nėra tiesioginė priemonė energijos taupymui ar aplinkosaugai.",
       },
       {
-        text: "Pateikti kiekvienam svečiui asmeninį robotą, kuris rūpinasi jų kambario tvarka",
+        text: "Pateikiant kiekvienam svečiui asmeninį robotą, kuris rūpinasi jų kambario tvarka",
         isCorrect: false,
         explanation:
           "Toks robotas neskatina energijos taupymo ar aplinkosaugos.",
@@ -151,7 +151,7 @@ export const CarQuestions = [
         text: "Klientų aptarnavimas",
         isCorrect: false,
         explanation:
-          "Nors AI gali padėti aptarnavime, pagrindinis privalumas gamykloje yra gamybos optimizavimas.",
+          "Nors DI gali padėti aptarnavime, pagrindinis privalumas gamykloje yra gamybos optimizavimas.",
       },
       {
         text: "Internetinės reklamos",
@@ -274,9 +274,9 @@ export const CarQuestions = [
           "Gamyklos techninė modernizacija bus didžiausių išlaidų reikalaujantis procesas, kuris bus būtinas diegiant dirbtinį intelektą į 'Automanijos' veiklą ir užtikrins, kad infrastruktūra būtų pasiruošusi naujovėms.",
       },
       {
-        text: "Komunikacija ir darbuotojų mokymas apie AI",
+        text: "Komunikacija ir darbuotojų mokymas apie DI",
         isCorrect: false,
-        explanation: "Tai nėra brangiausia dalis AI integracijos.",
+        explanation: "Tai nėra brangiausia dalis DI integracijos.",
       },
     ],
   },
@@ -302,10 +302,10 @@ export const EshopQuestions = [
         text: "Sekant, kiek laiko klientai praleidžia skaitydami prekių aprašymus",
         isCorrect: false,
         explanation:
-          "Tai nėra tiesioginė AI taikymo sritis klientų elgsenos supratimui.",
+          "Tai nėra tiesioginė DI taikymo sritis klientų elgsenos supratimui.",
       },
       {
-        text: "Siūlyti klientams dalyvauti kasdienėse loterijose",
+        text: "Siūlant klientams dalyvauti kasdienėse loterijose",
         isCorrect: false,
         explanation:
           "Tai gali būti naudinga kaip aktyvacijos priemonė, bet tai nesusiję su elgsenos analize.",
@@ -316,16 +316,16 @@ export const EshopQuestions = [
     q: "Kokiu būdu dirbtinis intelektas gali padėti 'Elektroninės prekybos platformai' sumažinti grąžinimo ir keitimo atvejus?",
     a: [
       {
-        text: "Siūlydami vartotojams virtualius 'fitting' kambarius",
+        text: "Siūlant vartotojams virtualius 'fitting' kambarius",
         isCorrect: true,
         explanation:
-          "Siūlydami vartotojams virtualius 'fitting' kambarius, platforma gali padėti sumažinti klaidingų pirkimų atvejų skaičių.",
+          "Siūlant vartotojams virtualius 'fitting' kambarius, platforma gali padėti sumažinti klaidingų pirkimų atvejų skaičių.",
       },
       {
-        text: "Nustatydami, kokias prekes klientai dažniausiai perka kartu",
+        text: "Nustatant, kokias prekes klientai dažniausiai perka kartu",
         isCorrect: false,
         explanation:
-          "Nors tai gali būti naudinga marketingo tikslais, tai netiesiogiai susiję su grąžinimo ir keitimo mažinimu.",
+          "Nors tai gali būti naudinga marketingo tikslais, tai nėra tiesiogiai susiję su grąžinimo ir keitimo mažinimu.",
       },
       {
         text: "Analizuojant, kokias prekių kategorijas klientai dažniausiai peržiūri",
@@ -334,10 +334,10 @@ export const EshopQuestions = [
           "Vien peržiūros negarantuoja, kad produktas bus perkamas ar patenkins kliento poreikius.",
       },
       {
-        text: "Siūlydami klientams apsilankyti fizinėje parduotuvėje prieš perkant",
+        text: "Siūlant klientams apsilankyti fizinėje parduotuvėje prieš perkant",
         isCorrect: false,
         explanation:
-          "Tai gali padidinti kliento pasitikėjimą produktu, bet tai nėra tiesioginė AI taikymo sritis grąžinimo ir keitimo mažinimui.",
+          "Tai gali padidinti kliento pasitikėjimą produktu, bet tai nėra tiesioginė DI taikymo sritis grąžinimo ir keitimo mažinimui.",
       },
     ],
   },
@@ -354,7 +354,7 @@ export const EshopQuestions = [
         text: "Kuriant socialinius tinklus",
         isCorrect: false,
         explanation:
-          "Socialiniai tinklai gali padėti bendrauti su klientais, bet nėra tiesioginės AI taikymo srities poreikių supratimui.",
+          "Socialiniai tinklai gali padėti bendrauti su klientais, bet nėra tiesioginės DI taikymo srities poreikių supratimui.",
       },
       {
         text: "Pakeičiant svetainės dizainą kas mėnesį",
@@ -366,12 +366,12 @@ export const EshopQuestions = [
         text: "Siūlant klientams atlikti ilgus apklausos klausimynus",
         isCorrect: false,
         explanation:
-          "Ilgi klausimynai gali būti naudingi gauti informacijai, bet jie gali atbaidyti klientus dėl jų ilgumo.",
+          "Ilgi klausimynai gali būti naudingi gauti informacijai, bet jie gali atbaidyti klientus.",
       },
     ],
   },
   {
-    q: "Kaip AI gali padėti 'Elektroninės prekybos platformai' konkuruoti su didesnėmis platformomis?",
+    q: "Kaip DI gali padėti 'Elektroninės prekybos platformai' konkuruoti su didesnėmis platformomis?",
     a: [
       {
         text: "Automatiškai keičiant kainas atsižvelgiant į konkurentų kainas",
@@ -380,22 +380,22 @@ export const EshopQuestions = [
           "Automatiškas kainų keitimas atsižvelgiant į konkurentų kainas gali padėti platformai konkuruoti su kitomis didelėmis platformomis.",
       },
       {
-        text: "Sukurti virtualią realybę, kurioje klientai gali apžiūrėti prekes",
+        text: "Sukuriant virtualią realybę, kurioje klientai gali apžiūrėti prekes",
         isCorrect: false,
         explanation:
           "Virtuali realybė gali būti įdomi naujovė, bet tai reikalauja didelių investicijų ir gali netinkamai veikti visiems klientams.",
       },
       {
-        text: "Siūlyti klientams nemokamus produktus",
+        text: "Siūlant klientams nemokamus produktus",
         isCorrect: false,
         explanation:
-          "Siūlyti nemokamus produktus gali pritraukti daugiau klientų, bet tai gali būti neekonomiška ir sumažinti pelningumą.",
+          "Nemokamų produktų siūlymas gali pritraukti daugiau klientų, bet tai gali būti neekonomiška ir sumažinti pelningumą.",
       },
       {
-        text: "Keisti platformos pavadinimą kas savaitę",
+        text: "Keičiant platformos pavadinimą kas savaitę",
         isCorrect: false,
         explanation:
-          "Keisti pavadinimą kas savaitę gali sukelti painiavą tarp klientų ir prarasti prekinio ženklo vertę.",
+          "Pavadinimo keitimas kas savaitę gali sukelti painiavą tarp klientų ir prarasti prekinio ženklo vertę.",
       },
     ],
   },
@@ -412,13 +412,13 @@ export const HospitalQuestions = [
           "Analizuojant vizitų duomenis, galima prognozuoti didžiausias apkrovas ir efektyviau valdyti pacientų srautus.",
       },
       {
-        text: "Siūlydami pacientams mokėti papildomai už greitesnį aptarnavimą",
+        text: "Siūlant pacientams mokėti papildomai už greitesnį aptarnavimą",
         isCorrect: false,
         explanation:
           "Pasiūlymas mokėti papildomai gali sukelti socialines ir etines problemas, diskriminuojant pacientus dėl finansinių priežasčių.",
       },
       {
-        text: "Sukurdami virtualų gydytoją, kuris konsultuotų visus pacientus",
+        text: "Sukuriant virtualų gydytoją, kuris konsultuotų visus pacientus",
         isCorrect: false,
         explanation:
           "Virtualus gydytojas gali suteikti pradinę konsultaciją, bet negali pakeisti tikrojo specialisto, ypač sudėtingesniais atvejais.",
@@ -432,28 +432,28 @@ export const HospitalQuestions = [
     ],
   },
   {
-    q: "Kaip AI gali pagerinti diagnostikos tikslumą 'Sveikatos priežiūros įstaigoje'?",
+    q: "Kaip DI gali pagerinti diagnostikos tikslumą 'Sveikatos priežiūros įstaigoje'?",
     a: [
       {
-        text: "Siūlydami gydytojams mokymus apie naujausias medicinos tendencijas",
+        text: "Siūlant gydytojams mokymus apie naujausias medicinos tendencijas",
         isCorrect: false,
         explanation:
-          "Gydytojų mokymai yra svarbūs, bet tai nėra tiesioginė AI taikymo sritis diagnostikos tikslumui.",
+          "Gydytojų mokymai yra svarbūs, bet tai nėra tiesioginė DI taikymo sritis diagnostikos tikslumui.",
       },
       {
         text: "Analizuojant ir mokant sistemą atpažinti ligų modelius iš skaitmeninių vaizdų (pvz., rentgeno)",
         isCorrect: true,
         explanation:
-          "AI gali pagerinti diagnostikos tikslumą, analizuodamas ir mokydamas sistemą atpažinti ligų modelius iš skaitmeninių vaizdų, pvz., rentgeno nuotraukų.",
+          "DI gali pagerinti diagnostikos tikslumą, analizuojant ir mokant sistemą atpažinti ligų modelius iš skaitmeninių vaizdų, pvz., rentgeno nuotraukų.",
       },
       {
-        text: "Siūlydami pacientams dažniau lankytis pas gydytoją",
+        text: "Siūlant pacientams dažniau lankytis pas gydytoją",
         isCorrect: false,
         explanation:
-          "Dažnesni vizitai pas gydytoją gali padėti anksčiau nustatyti problemas, bet tai nėra tiesiogiai susiję su AI.",
+          "Dažnesni vizitai pas gydytoją gali padėti anksčiau nustatyti problemas, bet tai nėra tiesiogiai susiję su DI.",
       },
       {
-        text: "Surinkdami daugiau pacientų atsiliepimų",
+        text: "Surenkant daugiau pacientų atsiliepimų",
         isCorrect: false,
         explanation:
           "Pacientų atsiliepimai gali padėti gerinti aptarnavimą, bet nebūtinai diagnostikos tikslumą.",
@@ -464,13 +464,13 @@ export const HospitalQuestions = [
     q: "Kaip 'Sveikatos priežiūros įstaiga' gali naudoti dirbtinį intelektą individualizuotam gydymui?",
     a: [
       {
-        text: "Naudojant genetinius duomenis prognozuojant ligų riziką ir rekomenduojant prevencines priemones",
+        text: "Naudoti genetinius duomenis prognozuojant ligų riziką ir rekomenduojant prevencines priemones",
         isCorrect: true,
         explanation:
-          "AI gali naudoti genetinius duomenis, prognozuoti ligų riziką ir rekomenduoti individualizuotas prevencines priemones.",
+          "DI gali naudoti genetinius duomenis, prognozuoti ligų riziką ir rekomenduoti individualizuotas prevencines priemones.",
       },
       {
-        text: "Siūlydami pacientams pasirinkti gydytoją pagal populiarumą",
+        text: "Siūlant pacientams pasirinkti gydytoją pagal populiarumą",
         isCorrect: false,
         explanation:
           "Gydytojo populiarumas nesuteikia informacijos apie individualizuotą gydymą ar jo kompetenciją.",
@@ -482,7 +482,7 @@ export const HospitalQuestions = [
           "Socialinių tinklų analizė gali sukelti privatumo problemas ir nėra tiesiogiai susijusi su individualiu gydymu.",
       },
       {
-        text: "Surinkdami duomenis apie pacientų mėgstamiausius maisto produktus",
+        text: "Surenkant duomenis apie pacientų mėgstamiausius maisto produktus",
         isCorrect: false,
         explanation:
           "Maisto produktų pasirinkimas gali suteikti informacijos apie paciento mitybą, bet tai yra tik dalis visos informacijos, reikalingos individualizuotam gydymui.",
