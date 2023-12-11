@@ -137,13 +137,13 @@ function loadResults() {
     resultHeader.style.color = redColor;
 
     message.innerText =
-      "Jums dar trūksta žinių dirbtinio intelekto sferoje. Galbūt norėtum išbandyti savo žinias iš naujo?";
+      "Tau dar trūksta žinių dirbtinio intelekto sferoje. Galbūt norėtum išbandyti savo žinias iš naujo?";
     results.style.color = redColor;
   } else {
     resultHeader.innerText = "Sveikiname!";
     resultHeader.style.color = greenColor;
     message.innerText =
-      "Jūs įrodėte, jog turite geras žinias apie dirbtinio intelekto taikymą verslo procesuose. Jeigu norite, galite žaidimą sužaisti dar kartą";
+      "Tu įrodei, jog turi geras žinias apie dirbtinio intelekto taikymą verslo procesuose. Jeigu nori, gali žaidimą sužaisti dar kartą";
     results.style.color = greenColor;
   }
 

@@ -69,7 +69,7 @@ function loadData() {
       pardavimo.<br />
 
       <span class="bold">Tiekimo grandinės problemos:</span> Dėl
-      užsakymų kiekio svyravimų, tiekimo grandinė nėra stabilu.<br />
+      užsakymų kiekio svyravimų, tiekimo grandinė nėra stabili.<br />
 
       <span class="bold">Rinkos pokyčiai:</span> Poreikis
       ekologiškesniems ir technologiškai pažangesniems automobiliams
@@ -79,26 +79,26 @@ function loadData() {
       break;
     case "Hotel":
       title.innerHTML = "Viešbutis";
-      firstDescription.innerHTML = `"Hotela" yra prabangus penkių žvaigždučių viešbutis, įsikūręs miesto centre. Jis pasižymi puikiu aptarnavimu, istoriniu paveldu ir moderniais patogumais. Tačiau pastaruoju metu viešbutis susiduria su keletu iššūkių dėl konkurencijos, technologinės pažangos ir besikeičiančiųsi klientų lūkesčių`;
+      firstDescription.innerHTML = `"Hotela" yra prabangus penkių žvaigždučių viešbutis, įsikūręs miesto centre. Jis pasižymi puikiu aptarnavimu, istoriniu paveldu ir moderniais patogumais. Tačiau pastaruoju metu viešbutis susiduria su keletu iššūkių dėl konkurencijos, technologinės pažangos ir besikeičiančių klientų lūkesčių.`;
       list.innerHTML = `<span class="bold">Rezervacijų sistema:</span>
       Dabartinė rezervacijų sistema yra pasenusi ir dažnai kelia problemų tiek darbuotojams, tiek svečiams.<br />
 
-      <span class="bold">Klientų aptarnavimas:</span> Svečių lūkesčiai nuolat auga, o viešbutis turi užtikrinti nuoseklų aukšto lygio aptarnavimą<br />
+      <span class="bold">Klientų aptarnavimas:</span> Svečių lūkesčiai nuolat auga, o viešbutis turi užtikrinti nuoseklų aukšto lygio aptarnavimą.<br />
 
-      <span class="bold">Kainodara:</span> Konkuruojant su kitais prabangiais viešbučiais ir naujomis viešnagės platformomis, viešbutis turi rasti optimalų kainų balansą<br />
+      <span class="bold">Kainodara:</span> Konkuruojant su kitais prabangiais viešbučiais ir naujomis viešnagės platformomis, viešbutis turi rasti optimalų kainų balansą.<br />
 
-      <span class="bold">Technologijų integracija:</span> Naujų technologijų, tokių kaip virtuali realybė ar mobiliųjų programėlių, naudojimas tampa vis svarbesnis svečių patirtims gerinti.<br />`;
+      <span class="bold">Technologijų integracija:</span> Naujų technologijų, tokių kaip virtuali realybė ar mobiliosios programėlės, naudojimas tampa vis svarbesnis svečių patirtims gerinti.<br />`;
       image.src = "/S190B189-3K/assets/illustrations/Hotel.svg";
       break;
     case "Eshop":
       title.innerHTML = "Elektroninės prekybos platforma";
-      firstDescription.innerHTML = `"Elektroninės prekybos platforma" yra maža, bet auganti e-prekybos svetainė šalyje. Jie siūlo apie tūkstantį unikalių prekių, daugiausiai vietinių gamintojų. Įmonė stengiasi išsiskirti asmeniniu aptarnavimu, unikaliomis prekėmis ir greitu pristatymu`;
+      firstDescription.innerHTML = `"Elektroninės prekybos platforma" yra maža, bet auganti e-prekybos svetainė šalyje. Jie siūlo apie tūkstantį unikalių prekių, daugiausiai vietinių gamintojų. Įmonė stengiasi išsiskirti asmeniniu aptarnavimu, unikaliomis prekėmis ir greitu pristatymu.`;
       list.innerHTML = `<span class="bold">Rinkos įžvalgos:</span>
       Dėl ribotų resursų ir mažesnio klientų skaičiaus, svetainei sunku nustatyti, kokie produktai bus populiariausi.<br />
 
       <span class="bold">Konkurencija:</span> Nedidelė įmonė susiduria su konkurencija iš didesnių e-prekybos svetainių, kurios gali pasiūlyti platesnį prekių asortimentą ir mažesnes kainas.<br />
 
-      <span class="bold">Sistemos stabilumas:</span> Užtikrinti, kad svetainė veikia be trikdžių ir sugeba tvarkyti vis didesnį srautą yra esminė sėkmės dalis.Įmonės aprašymas: "Elektroninės prekybos platforma"<br />`;
+      <span class="bold">Sistemos stabilumas:</span> Užtikrinti, kad svetainė veikia be trikdžių ir sugeba tvarkyti vis didesnį srautą yra esminė sėkmės dalis.<br />`;
       image.src = "/S190B189-3K/assets/illustrations/Eshop.svg";
       break;
     case "Hospital":

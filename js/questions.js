@@ -6,7 +6,7 @@ export const HotelQuestions = [
         text: "Analizuojant svečių elgseną ir prognozuojant užsakymų srautus",
         isCorrect: true,
         explanation:
-          "Analizuojant svečių elgseną ir prognozuojant užsakymų srautus, galima efektyviai optimizuoti rezervacijų sistemą, nustatant optimalius laikotarpius ir kainas.",
+          "Analizuojant svečių elgseną ir prognozuojant užsakymų srautus galima efektyviai optimizuoti rezervacijų sistemą, nustatant optimalius laikotarpius ir kainas.",
       },
       {
         text: "Pakeičiant rezervacijų sistemą socialiniais tinklais",
@@ -20,7 +20,7 @@ export const HotelQuestions = [
         explanation: "Tai nėra rezervacijų valdymo įrankis.",
       },
       {
-        text: "Stebėjant svečių judėjimą realiu laiku",
+        text: "Stebint svečių judėjimą realiu laiku",
         isCorrect: false,
         explanation:
           "Tai nėra tiesioginis būdas optimizuoti rezervacijų sistemą.",
@@ -37,12 +37,12 @@ export const HotelQuestions = [
           "Chatbot'ų panaudojimas klientų aptarnavime leidžia viešbučiui efektyviai ir nuolatos bendrauti su klientais, teikiant jiems reikiamą informaciją ir sprendžiant problemas.",
       },
       {
-        text: "Stebėti svečių pokalbius, kad sužinoti jų slaptus pageidavimus",
+        text: "Stebėti svečių pokalbius, kad sužinotų jų slaptus pageidavimus",
         isCorrect: false,
-        explanation: "Tai labai neetiška ir gali pažeisti svečių privatumą.",
+        explanation: "Tai labai neetiška ir pažeidžia svečių privatumą.",
       },
       {
-        text: "Nustatyti kliento veido atpažinimo sistemas liftuose",
+        text: "Naudoti kliento veido atpažinimo sistemas liftuose",
         isCorrect: false,
         explanation:
           "Tai gali sukelti privatumo problemas ir gali būti laikoma invaziniu veiksmu be kliento sutikimo.",
@@ -80,18 +80,18 @@ export const HotelQuestions = [
         text: "Keičiant kainas kiekvieną dieną pagal mėnesio fazę",
         isCorrect: false,
         explanation:
-          "Nėra efektyvus būdas optimizuoti kainodarą, nes ji neparemta konkrečiais duomenimis ar konkurentų kainomis.",
+          "Nėra efektyvus būdas optimizuoti kainodarą, nes ji nėra paremta konkrečiais duomenimis ar konkurentų kainomis.",
       },
     ],
   },
   {
-    q: "Kaip 'Hotela' galėtų naudoti DI, siekiant tapti ekologiškesniu ir atsakingesniu?",
+    q: "Kaip 'Hotela' galėtų naudoti DI, siekiant tapti ekologiškesniu ir atsakingesniu viešbučiu?",
     a: [
       {
         text: "Prognozuoti energijos suvartojimą ir optimizuoti šildymo/aušinimo sistemas",
         isCorrect: true,
         explanation:
-          "Energijos suvartojimo prognozės leidžia viešbučiui efektyviai valdyti energijos naudojimą, prisidedant prie aplinkos apsaugos",
+          "Energijos suvartojimo prognozės leidžia viešbučiui efektyviai valdyti energijos naudojimą, prisidedant prie aplinkos apsaugos.",
       },
       {
         text: "Automatiškai keisti kambario spalvas pagal svečių nuotaiką",
@@ -122,7 +122,7 @@ export const CarQuestions = [
         text: "Automatinės rezervacijos sistemos",
         isCorrect: false,
         explanation:
-          "Automobilių gamykloje svarbiau optimizuoti gamybos procesus nei rezervacijas",
+          "Automobilių gamykloje svarbiau optimizuoti gamybos procesus nei rezervacijas.",
       },
       {
         text: "Gamybos linijos optimizacija",
@@ -134,13 +134,13 @@ export const CarQuestions = [
         text: "Elektroninės prekybos analizė",
         isCorrect: false,
         explanation:
-          "Tai labiau tinka elektroninės prekybos įmonėms, o ne gamykloms",
+          "Tai labiau tinka elektroninės prekybos įmonėms, o ne gamykloms.",
       },
       {
         text: "Pacientų duomenų analizė",
         isCorrect: false,
         explanation:
-          "Tai yra susiję su sveikatos priežiūra, o ne automobilių gamyb",
+          "Tai yra susiję su sveikatos priežiūra, o ne automobilių gamyba.",
       },
     ],
   },
@@ -156,7 +156,7 @@ export const CarQuestions = [
       {
         text: "Internetinės reklamos",
         isCorrect: false,
-        explanation: "Tai nėra pagrindinė gamyklos funkcija",
+        explanation: "Tai nėra pagrindinė gamyklos funkcija.",
       },
       {
         text: "Gydomųjų procedūrų rekomendacijos",
@@ -178,7 +178,7 @@ export const CarQuestions = [
         text: "Pateikiant asmenines nuolaidas klientams",
         isCorrect: false,
         explanation:
-          " tai gali padėti gauti daugiau pardavimų, tačiau šiuo atveju investuoti į tiekimo grandinės optimizavimą su DI būtų tikslingiausia.",
+          "Tai gali padėti gauti daugiau pardavimų, tačiau šiuo atveju investuoti į tiekimo grandinės optimizavimą su DI būtų tikslingiausia.",
       },
       {
         text: "Analizuojant klientų atsiliepimus",
@@ -296,10 +296,10 @@ export const EshopQuestions = [
         text: "Stengiantis pakeisti svetainės spalvų schemą pagal mados tendencijas",
         isCorrect: false,
         explanation:
-          "Tai gali būti naudinga marketingo tikslais, bet tai netiesiogiai susiję su klientų elgsenos supratimu.",
+          "Tai gali būti naudinga marketingo tikslais, bet tai nėra tiesiogiai susiję su klientų elgsenos supratimu.",
       },
       {
-        text: "Sekant, kiek laiko klientai praleidžia skaitant prekių aprašymus",
+        text: "Sekant, kiek laiko klientai praleidžia skaitydami prekių aprašymus",
         isCorrect: false,
         explanation:
           "Tai nėra tiesioginė AI taikymo sritis klientų elgsenos supratimui.",
@@ -328,7 +328,7 @@ export const EshopQuestions = [
           "Nors tai gali būti naudinga marketingo tikslais, tai netiesiogiai susiję su grąžinimo ir keitimo mažinimu.",
       },
       {
-        text: "Analizuojant, kokius prekių kategorijas klientai dažniausiai peržiūri",
+        text: "Analizuojant, kokias prekių kategorijas klientai dažniausiai peržiūri",
         isCorrect: false,
         explanation:
           "Vien peržiūros negarantuoja, kad produktas bus perkamas ar patenkins kliento poreikius.",
@@ -450,7 +450,7 @@ export const HospitalQuestions = [
         text: "Siūlydami pacientams dažniau lankytis pas gydytoją",
         isCorrect: false,
         explanation:
-          "Dažnesni vizitai pas gydytoją gali padėti ankstyvai nustatyti problemas, bet tai nėra tiesiogiai susiję su AI.",
+          "Dažnesni vizitai pas gydytoją gali padėti anksčiau nustatyti problemas, bet tai nėra tiesiogiai susiję su AI.",
       },
       {
         text: "Surinkdami daugiau pacientų atsiliepimų",
