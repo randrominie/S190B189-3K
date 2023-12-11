@@ -92,7 +92,7 @@ function loadData() {
       break;
     case "Eshop":
       title.innerHTML = "Elektroninės prekybos platforma";
-      firstDescription.innerHTML = `"Elektroninės prekybos platforma" yra maža, bet auganti e-prekybos svetainė šalyje. Jie siūlo apie tūkstantį unikalių prekių, daugiausiai vietinių gamintojų. Įmonė stengiasi išsiskirti asmeniniu aptarnavimu, unikaliomis prekėmis ir greitu pristatymu.`;
+      firstDescription.innerHTML = `"Pirkinių viešnagė" yra maža, bet auganti e-prekybos svetainė šalyje. Jie siūlo apie tūkstantį unikalių prekių, daugiausiai vietinių gamintojų. Įmonė stengiasi išsiskirti asmeniniu aptarnavimu, unikaliomis prekėmis ir greitu pristatymu.`;
       list.innerHTML = `<span class="bold">Rinkos įžvalgos:</span>
       Dėl ribotų resursų ir mažesnio klientų skaičiaus, svetainei sunku nustatyti, kokie produktai bus populiariausi.<br />
 

@@ -113,6 +113,34 @@ export const HotelQuestions = [
     ],
   },
   {
+    q: "Kaip mašininis mokymasis, įskaitant veido skaitymą, gali būti naudingas žmonių išteklių valdymui viešbučiui 'Hotela'?",
+    a: [
+      {
+        text: "Automatiškai identifikuoti darbuotojų dalyvavimą įvairiuose renginiuose ir susitikimuose, suteikiant įžvalgų apie jų aktyvumą ir tinkamumą kolektyve.",
+        isCorrect: false,
+        explanation:
+          "Tai labiau susiję su darbuotojų fizinio buvimo vietos stebėjimu, o ne tiesiogiai su žmonių išteklių valdymu ar jų gerovės vertinimu.",
+      },
+      {
+        text: "Stebėti darbuotojų veido išraiškas, siekiant suprasti jų emocinę būseną ir įvertinti bendrą gerovės lygį darbe.",
+        isCorrect: true,
+        explanation: "Šis variantas suteiktų naudingos informacijos apie bendrą gerovės lygį darbe.",
+      },
+      {
+        text: "Sekti darbuotojų lankomus skyrius ir užduotis, atsižvelgiant į jų veido reakcijas ir koncentracijos lygį.",
+        isCorrect: false,
+        explanation:
+          "Nors veido skaitymas gali teikti tam tikrą informaciją apie veido reakcijas, šis variantas pateikia pernelyg specifinį scenarijų, kuris gali būti perteklinis žmonių išteklių valdymui.",
+      },
+      {
+        text: "Įvertinti darbuotojų techninius įgūdžius ir gebėjimus remiantis jų veido išraiškomis ir veiklumu",
+        isCorrect: false,
+        explanation:
+          "Žmogaus veido išraiškos gali būti labai individualios ir ne visada tiesiogiai susijusios su darbuotojų techniniais gebėjimais.",
+      },
+    ],
+  },
+  {
     q: "Kuri dirbtinio intelekto technika gali būti naudojama viešbučio finansinių pasiekimų prognozavimui?",
     a: [
       {
@@ -308,11 +336,67 @@ export const CarQuestions = [
       },
     ],
   },
+  {
+    q: "Į kokį išorinį veiksnį automobilių pramonės įmonė turėtų labiausiai atsižvelgti, integruodama dirbtinį intelektą, siekdama atitikti aplinkosaugos reikalavimus?",
+    a: [
+      {
+        text: "Spaudimas mažinti CO2 emisijas",
+        isCorrect: true,
+        explanation:
+          "Automobilių pramonė, integruodama dirbtinį intelektą, turėtų labiausiai atsižvelgti į CO2 emisijų mažinimo spaudimą, siekdama atitikti griežtesnius aplinkosaugos reikalavimus.",
+      },
+      {
+        text: "Griežtesni darbuotojų darbo saugos standartai",
+        isCorrect: false,
+        explanation:
+          "Nors svarbu, tai paprastai nėra tiesiogiai susiję su DI ir aplinkos reikalavimais automobilių pramonėje.",
+      },
+      {
+        text: "Elektromobilių populiarėjimas rinkoje",
+        isCorrect: false,
+        explanation:
+          "Tai gali būti veiksnys, bet nėra tiesiogiai susijęs su įdiegimu DI dėl aplinkos reikalavimų ir konkurencijos.",
+      },
+      {
+        text: "Aukštesni įmonių pelningumo reikalavimai",
+        isCorrect: false,
+        explanation: "Nors efektyvus verslo valdymas yra svarbus, tai gali būti platesnis veiksnys, nei tiesiogiai susijęs su DI ir aplinkos reikalavimais automobilių pramonėje.",
+      },
+    ],
+  },
+  {
+    q: "Kaip galima pasinaudoti natūralios kalbos apdorojimu (NLP) analizuojant tekstinius duomenis automobilių gamykloje, siekiant geriau suprasti darbuotojų patirtį ir poreikius darbo vietoje?",
+    a: [
+      {
+        text: "Identifikuoti pagrindinius darbuotojų nusiskundimus dėl gamybos procesų efektyvumo",
+        isCorrect: false,
+        explanation:
+          "Nors tai svarbu, tai gali būti per daug apie procesus, o ne apie asmeninius darbuotojų patyrimus.",
+      },
+      {
+        text: "Analizuoti darbuotojų emocinę būseną ir pasitenkinimą, remiantis jų tekstiniais atsiliepimais",
+        isCorrect: true,
+        explanation:
+          "Tekstinė analizė leidžia nustatyti nuotaiką ir atsakymus bei išskirti pagrindines sritis, kurios reikalingos patobulinimui.",
+      },
+      {
+        text: "Aptikti pagrindinius iššūkius, su kuriais susiduria darbuotojai (pvz., logistikos problemos, technologijų naudojimas)",
+        isCorrect: false,
+        explanation:
+          "Nors tai svarbu, tai galėtų būti per daug orientuota į išorines problemas, o ne asmeninius darbuotojų poreikius.",
+      },
+      {
+        text: "Identifikuoti darbuotojų vertybines nuostatas ir požiūrį į darbo aplinką",
+        isCorrect: false,
+        explanation: "Nors tai svarbu, NLP čia galėtų būti naudojamas norint geriau suprasti emocijas ir asmeninius darbuotojų patyrimus, o ne tiesiog vertybines nuostatas.",
+      },
+    ],
+  },
 ];
 
 export const EshopQuestions = [
   {
-    q: "Kaip 'Elektroninės prekybos platforma' gali naudoti dirbtinį intelektą norėdama geriau suprasti klientų elgseną ir jų pirkimo motyvacijas?",
+    q: "Kaip 'Pirkinių viešnagė' gali naudoti dirbtinį intelektą norėdama geriau suprasti klientų elgseną ir jų pirkimo motyvacijas?",
     a: [
       {
         text: "Naudojant sentimentų analizę klientų atsiliepimams vertinti",
@@ -341,7 +425,7 @@ export const EshopQuestions = [
     ],
   },
   {
-    q: "Kokiu būdu dirbtinis intelektas gali padėti 'Elektroninės prekybos platformai' sumažinti grąžinimo ir keitimo atvejus?",
+    q: "Kokiu būdu dirbtinis intelektas gali padėti 'Pirkinių viešnagei' sumažinti grąžinimo ir keitimo atvejus?",
     a: [
       {
         text: "Siūlant vartotojams virtualius 'fitting' kambarius",
@@ -370,7 +454,7 @@ export const EshopQuestions = [
     ],
   },
   {
-    q: "Kaip dirbtinis intelektas gali padėti 'Elektroninės prekybos platformai' geriau suprasti savo klientų poreikius?",
+    q: "Kaip dirbtinis intelektas gali padėti 'Pirkinių viešnagei' geriau suprasti savo klientų poreikius?",
     a: [
       {
         text: "Analizuojant pardavimų duomenis ir prognozuojant populiariausias prekes",
@@ -399,7 +483,7 @@ export const EshopQuestions = [
     ],
   },
   {
-    q: "Kaip DI gali padėti 'Elektroninės prekybos platformai' konkuruoti su didesnėmis platformomis?",
+    q: "Kaip DI gali padėti 'Pirkinių viešnagei' konkuruoti su didesnėmis platformomis?",
     a: [
       {
         text: "Automatiškai keičiant kainas atsižvelgiant į konkurentų kainas",
@@ -424,6 +508,35 @@ export const EshopQuestions = [
         isCorrect: false,
         explanation:
           "Pavadinimo keitimas kas savaitę gali sukelti painiavą tarp klientų ir prarasti prekinio ženklo vertę.",
+      },
+    ],
+  },
+  {
+    q: "Kaip dirbtinis intelektas gali būti panaudotas efektyviai segmentuoti 'Pirkinių Viešnagės' rinką ir personalizuoti marketingo žinutes?",
+    a: [
+      {
+        text: "Naudodamas geografinius duomenis išskirti regionines rinkas",
+        isCorrect: false,
+        explanation:
+          "Čia reikėtų naudoti geografinės informacijos sistemas (GIS) ir vietovės pagrindu veikiančius DI algoritmus.",
+      },
+      {
+        text: "Analizuojant vartotojų elgseną ir pirkimo istoriją, kad sukurtų pritaikytas reklamas",
+        isCorrect: true,
+        explanation:
+          "DI gali greitai analizuoti didelius duomenų kiekius, atskleisti vartotojų elgsenos tendencijas ir sukurti labai tikslines reklamas.",
+      },
+      {
+        text: "Naudojant vieną reklamos šabloną visiems klientams",
+        isCorrect: false,
+        explanation:
+          "Čia nėra būdinga DI technikų panaudojimui.",
+      },
+      {
+        text: "Tikrinant reklamų efektyvumą naudojant tik finansinius duomenis",
+        isCorrect: false,
+        explanation:
+          "Šiuo atveju DI panaudojimas būtų ribotas ir negalėtų efektyviai išnaudoti turimų duomenų.",
       },
     ],
   },
