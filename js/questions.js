@@ -112,6 +112,34 @@ export const HotelQuestions = [
       },
     ],
   },
+  {
+    q: "Kuri dirbtinio intelekto technika gali būti naudojama viešbučio finansinių pasiekimų prognozavimui?",
+    a: [
+      {
+        text: "Skatinamasis mokymasis (reinforcement learning)",
+        isCorrect: true,
+        explanation:
+          "Ši technika leidžia modeliams mokytis iš savo veiksmų ir jų pasekmių, kai jie bando maksimizuoti pelną ir sumažinti nuostolius.",
+      },
+      {
+        text: "Genetiniai algoritmai",
+        isCorrect: false,
+        explanation: "Nors jie gali būti naudojami optimizavimo uždaviniams, genetiniai algoritmai nėra pagrindinė technika, naudojama modeliuojant finansų valdymo procesus.",
+      },
+      {
+        text: "Ekspertinės sistemos",
+        isCorrect: false,
+        explanation:
+          "Jos daugiau orientuotos į sprendimų priėmimą remiantis ekspertų žiniomis, o ne duomenų analize ar tendencijų prognozavimu.",
+      },
+      {
+        text: "Žmogaus ir kompiuterio sąsajos technologijos",
+        isCorrect: false,
+        explanation:
+          "Šios technologijos daugiau susijusios su vartotojo sąsajos dizainu ir interakcija, o ne su duomenų analize.",
+      },
+    ],
+  },
 ];
 
 export const CarQuestions = [
@@ -486,6 +514,35 @@ export const HospitalQuestions = [
         isCorrect: false,
         explanation:
           "Maisto produktų pasirinkimas gali suteikti informacijos apie paciento mitybą, bet tai yra tik dalis visos informacijos, reikalingos individualizuotam gydymui.",
+      },
+    ],
+  },
+  {
+    q: "Kaip dirbtinis intelektas gali padėti valdyti sveikatos priežiūros įstaigos klientų kredito riziką, teikiant jiems mokamas paslaugas?",
+    a: [
+      {
+        text: "Automatizuojant klientų aptarnavimą",
+        isCorrect: false,
+        explanation:
+          "Tai pagerina klientų patirtį, bet nėra tiesiogiai susiję su kredito rizikos valdymu.",
+      },
+      {
+        text: "Analizuojant socialinių tinklų duomenis",
+        isCorrect: false,
+        explanation:
+          "Nors socialinių tinklų analizė gali suteikti papildomos informacijos apie klientus, tai nėra pagrindinis būdas, kaip DI padeda valdyti kredito riziką.",
+      },
+      {
+        text: "Naudojant išplėtotą duomenų analizę klientų kreditingumo vertinimui",
+        isCorrect: true,
+        explanation:
+          "Mašininio mokymosi technikos gali analizuoti didelius duomenų kiekius ir atskleisti sudėtingas tendencijas bei modelius, padedančius prognozuoti klientų kredito grąžinimo tikimybę ir valdyti kredito riziką.",
+      },
+      {
+        text: "Virtualių finansinių patarėjų kūrimas",
+        isCorrect: false,
+        explanation:
+          "Tai gali padėti priimti finansinius sprendimus, tačiau tiesiogiai nėra susiję su kredito rizikos valdymu.",
       },
     ],
   },
