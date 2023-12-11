@@ -124,7 +124,8 @@ export const HotelQuestions = [
       {
         text: "Stebėti darbuotojų veido išraiškas, siekiant suprasti jų emocinę būseną ir įvertinti bendrą gerovės lygį darbe.",
         isCorrect: true,
-        explanation: "Šis variantas suteiktų naudingos informacijos apie bendrą gerovės lygį darbe.",
+        explanation:
+          "Šis variantas suteiktų naudingos informacijos apie bendrą gerovės lygį darbe.",
       },
       {
         text: "Sekti darbuotojų lankomus skyrius ir užduotis, atsižvelgiant į jų veido reakcijas ir koncentracijos lygį.",
@@ -152,7 +153,8 @@ export const HotelQuestions = [
       {
         text: "Genetiniai algoritmai",
         isCorrect: false,
-        explanation: "Nors jie gali būti naudojami optimizavimo uždaviniams, genetiniai algoritmai nėra pagrindinė technika, naudojama modeliuojant finansų valdymo procesus.",
+        explanation:
+          "Nors jie gali būti naudojami optimizavimo uždaviniams, genetiniai algoritmai nėra pagrindinė technika, naudojama modeliuojant finansų valdymo procesus.",
       },
       {
         text: "Ekspertinės sistemos",
@@ -228,7 +230,7 @@ export const CarQuestions = [
     ],
   },
   {
-    q: "Kaip DI galėtų padėti pagerinti gamybos efektyvumą?",
+    q: "Kaip DI galėtų padėti pagerinti automobilių gamybos planavimą?",
     a: [
       {
         text: "Pateikiant asmenines nuolaidas klientams",
@@ -360,7 +362,8 @@ export const CarQuestions = [
       {
         text: "Aukštesni įmonių pelningumo reikalavimai",
         isCorrect: false,
-        explanation: "Nors efektyvus verslo valdymas yra svarbus, tai gali būti platesnis veiksnys, nei tiesiogiai susijęs su DI ir aplinkos reikalavimais automobilių pramonėje.",
+        explanation:
+          "Nors efektyvus verslo valdymas yra svarbus, tai gali būti platesnis veiksnys, nei tiesiogiai susijęs su DI ir aplinkos reikalavimais automobilių pramonėje.",
       },
     ],
   },
@@ -388,7 +391,8 @@ export const CarQuestions = [
       {
         text: "Identifikuoti darbuotojų vertybines nuostatas ir požiūrį į darbo aplinką",
         isCorrect: false,
-        explanation: "Nors tai svarbu, NLP čia galėtų būti naudojamas norint geriau suprasti emocijas ir asmeninius darbuotojų patyrimus, o ne tiesiog vertybines nuostatas.",
+        explanation:
+          "Nors tai svarbu, NLP čia galėtų būti naudojamas norint geriau suprasti emocijas ir asmeninius darbuotojų patyrimus, o ne tiesiog vertybines nuostatas.",
       },
     ],
   },
@@ -529,8 +533,7 @@ export const EshopQuestions = [
       {
         text: "Naudojant vieną reklamos šabloną visiems klientams",
         isCorrect: false,
-        explanation:
-          "Čia nėra būdinga DI technikų panaudojimui.",
+        explanation: "Čia nėra būdinga DI technikų panaudojimui.",
       },
       {
         text: "Tikrinant reklamų efektyvumą naudojant tik finansinius duomenis",
@@ -540,11 +543,40 @@ export const EshopQuestions = [
       },
     ],
   },
+  {
+    q: 'Kaip natūralios kalbos apdorojimas (NLP) gali pagerinti vartotojo patirtį bendraujant su "Pirkinių viešnagės" virtualiu asistentu?',
+    a: [
+      {
+        text: "Leidžia asistentui suprasti vartotojo komandas ir atlikti užduotis",
+        isCorrect: true,
+        explanation:
+          "Natūralios kalbos apdorojimas leidžia vartotojui naudotis paprasta kasdiene kalba, padedant interaktyviai ieškoti prekių ar gauti rekomendacijas, didinant vartotojo patirtį per lengvesnį ir naudotojui patogesnį bendravimą.",
+      },
+      {
+        text: "Suteikia tik apribotą ir nesąmoningą atsakymą",
+        isCorrect: false,
+        explanation:
+          "Tai būtų netinkama naudojimo situacija, nes NLP tik turėtų pagerinti vartotojo patirtį, o ne pakenkti ar apriboti ją.",
+      },
+      {
+        text: "Neįtakoja bendravimo su asistentu",
+        isCorrect: false,
+        explanation:
+          "Natūralios kalbos apdorojimas būtent priešingai - suteikia galimybę efektyviau bendrauti su virtualiu asistentu, o ne riboja ar neįgalina šio bendravimo.",
+      },
+      {
+        text: "Sukelia painiavą ir neaiškumą vartotojui bendraujant su asistentu",
+        isCorrect: false,
+        explanation:
+          "Tai yra dažniausiai būdinga netinkamai arba netinkamai sukonfigūruotoms NLP sistemoms",
+      },
+    ],
+  },
 ];
 
 export const HospitalQuestions = [
   {
-    q: "Kaip dirbtinis intelektas gali padėti 'Sveikatos priežiūros įstaigai' efektyviau valdyti pacientų srautus?",
+    q: "Kaip dirbtinis intelektas gali padėti 'Medikai' efektyviau valdyti pacientų srautus?",
     a: [
       {
         text: "Analizuojant vizitų duomenis ir prognozuojant didžiausias apkrovas",
@@ -602,7 +634,7 @@ export const HospitalQuestions = [
     ],
   },
   {
-    q: "Kaip 'Sveikatos priežiūros įstaiga' gali naudoti dirbtinį intelektą individualizuotam gydymui?",
+    q: "Kaip 'Medika' gali naudoti dirbtinį intelektą individualizuotam gydymui?",
     a: [
       {
         text: "Naudoti genetinius duomenis prognozuojant ligų riziką ir rekomenduojant prevencines priemones",
@@ -656,6 +688,64 @@ export const HospitalQuestions = [
         isCorrect: false,
         explanation:
           "Tai gali padėti priimti finansinius sprendimus, tačiau tiesiogiai nėra susiję su kredito rizikos valdymu.",
+      },
+    ],
+  },
+  {
+    q: "Kokiu būdu dirbtinis intelektas gali padėti „Medikai”  geriau suprasti ir reaguoti į klientų nuomonę ir atsiliepimus apie jų teikiamas medicinos paslaugas?",
+    a: [
+      {
+        text: "Apsiribojant tik tradicinėmis rinkos tyrimo metodais ",
+        isCorrect: false,
+        explanation:
+          "Metodas nepasinaudoja AI galimybėmis analizuoti didelius duomenų kiekius realiu laiku.",
+      },
+      {
+        text: "Siūlydamas klientams tik populiariausias paslaugas",
+        isCorrect: false,
+        explanation:
+          "Šis metodas nesuteikia išsamios analizės apie klientų nuomones ir atsiliepimus.",
+      },
+      {
+        text: "Surinkdamas ir analizuodamas klientų atsiliepimus per socialinius tinklus ir atsiliepimų platformas",
+        isCorrect: true,
+        explanation:
+          "Čia reikalingas natūralios kalbos apdorojimas (NLP), sentimentų analizė ir teksto klasifikavimo algoritmai, kad būtų galima efektyviai surinkti ir analizuoti didelius duomenų kiekius.",
+      },
+      {
+        text: "Ignoruojant neigiamus atsiliepimus ir koncentruojantis tik į teigiamus",
+        isCorrect: false,
+        explanation:
+          "Tai nėra efektyvus būdas naudoti AI klientų nuomonių analizėje.",
+      },
+    ],
+  },
+  {
+    q: "Kaip gilūs neuroniniai tinklai gali pakeisti vartotojo patirtį lankantis “Medika” klinikos procedūrose?",
+    a: [
+      {
+        text: "Pateikti personalizuotus pasiūlymus pagal paciento diagnozę ir ligų istoriją",
+        isCorrect: false,
+        explanation:
+          "Tai gali būti svarbu, bet tai yra plačiau susiję su gydymo planavimu nei tiesiogine procedūrų optimizacija.",
+      },
+      {
+        text: "Tinkamai analizuoti paciento simptomus ir ligos eigą",
+        isCorrect: false,
+        explanation:
+          "Tai taip pat gali būti svarbu, bet tai neatskleidžia tiesioginio poveikio procedūrų optimizacijai.",
+      },
+      {
+        text: "Optimizuoti medicinos procedūras ir diagnozes remiantis gilesniu duomenų analizės lygiu",
+        isCorrect: true,
+        explanation:
+          "Šie tinklai gali išgryninti svarbią informaciją iš didelių duomenų rinkinių, padedantys gydytojams geriau suprasti pacientų būklę, ligų eigą, bei padėti pasirinkti tinkamiausią gydymo metodą ar procedūrą.",
+      },
+      {
+        text: "Efektyviau tvarkyti ir rūšiuoti didelius duomenų kiekius, pagerinant diagnozių tikslumą",
+        isCorrect: false,
+        explanation:
+          "Tai daugiau susiję su duomenų tvarkymu ir diagnozių tikslumu, bet ne tiesiogiai su procedūrų optimizacija.",
       },
     ],
   },
