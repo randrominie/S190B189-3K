@@ -544,7 +544,7 @@ export const EshopQuestions = [
     ],
   },
   {
-    q: 'Kaip natūralios kalbos apdorojimas (NLP) gali pagerinti vartotojo patirtį bendraujant su "Pirkinių viešnagės" virtualiu asistentu?',
+    q: "Kaip natūralios kalbos apdorojimas (NLP) gali pagerinti vartotojo patirtį bendraujant su 'Pirkinių viešnagės' virtualiu asistentu?",
     a: [
       {
         text: "Leidžia asistentui suprasti vartotojo komandas ir atlikti užduotis",
@@ -569,6 +569,35 @@ export const EshopQuestions = [
         isCorrect: false,
         explanation:
           "Tai yra dažniausiai būdinga netinkamai arba netinkamai sukonfigūruotoms NLP sistemoms",
+      },
+    ],
+  },
+  {
+    q: "Kaip 'Pirkinių viešnagė' galėtų efektyviai panaudoti dirbtinio intelekto (DI) strategijas atsargų valdymui optimizuoti, ypač turint omenyje ribotus resursus ir didelę konkurenciją?",
+    a: [
+      {
+        text: "Taikyti prognozavimo analizę, naudojant mašininio mokymosi algoritmus, norint nustatyti optimalius atsargų lygius.",
+        isCorrect: true,
+        explanation:
+          "Mašininio mokymosi algoritmai leidžia efektyviai analizuoti pardavimų istoriją ir rinkos tendencijas, leidžia platformai prognozuoti paklausą ir reguliuoti atsargų lygius, taip užtikrinant efektyvų atsargų valdymą.",
+      },
+      {
+        text: "Duomenų kasimo metodai",
+        isCorrect: false,
+        explanation:
+          "Nors tai yra vertinga, tačiau duomenų kasimas dažniau naudojamas klientų elgsenos analizei, o ne tiesiogiai atsargų valdymui.",
+      },
+      {
+        text: "DI pagrįsta tiekimo grandinės valdymo sistema",
+        isCorrect: false,
+        explanation:
+          "Automatinis pranešimas apie mažėjančias atsargas yra svarbus, tačiau pats savaime nepakankamai konkretus DI taikymas.",
+      },
+      {
+        text: "Neuroniniai tinklai klientų atsiliepimų analizei",
+        isCorrect: false,
+        explanation:
+          "Tai yra labiau susiję su klientų analize, o ne atsargų valdymu.",
       },
     ],
   },
@@ -692,10 +721,10 @@ export const HospitalQuestions = [
     ],
   },
   {
-    q: "Kokiu būdu dirbtinis intelektas gali padėti „Medikai”  geriau suprasti ir reaguoti į klientų nuomonę ir atsiliepimus apie jų teikiamas medicinos paslaugas?",
+    q: "Kokiu būdu dirbtinis intelektas gali padėti 'Medikai' geriau suprasti ir reaguoti į klientų nuomonę ir atsiliepimus apie jų teikiamas medicinos paslaugas?",
     a: [
       {
-        text: "Apsiribojant tik tradicinėmis rinkos tyrimo metodais ",
+        text: "Apsiribojant tik tradicinėmis rinkos tyrimo metodais.",
         isCorrect: false,
         explanation:
           "Metodas nepasinaudoja AI galimybėmis analizuoti didelius duomenų kiekius realiu laiku.",
@@ -721,7 +750,7 @@ export const HospitalQuestions = [
     ],
   },
   {
-    q: "Kaip gilūs neuroniniai tinklai gali pakeisti vartotojo patirtį lankantis “Medika” klinikos procedūrose?",
+    q: "Kaip gilūs neuroniniai tinklai gali pakeisti vartotojo patirtį lankantis 'Medika' klinikos procedūrose?",
     a: [
       {
         text: "Pateikti personalizuotus pasiūlymus pagal paciento diagnozę ir ligų istoriją",
@@ -746,6 +775,35 @@ export const HospitalQuestions = [
         isCorrect: false,
         explanation:
           "Tai daugiau susiję su duomenų tvarkymu ir diagnozių tikslumu, bet ne tiesiogiai su procedūrų optimizacija.",
+      },
+    ],
+  },
+  {
+    q: "Kaip dirbtinis intelektas gali būti panaudotas 'Medika' atsargų prognozavime?",
+    a: [
+      {
+        text: "Nustatant ateities politinius pokyčius",
+        isCorrect: false,
+        explanation:
+          "Dirbtinis intelektas nėra tiesiogiai skirtas politinių pokyčių nustatymui. Jis dažniau naudojamas analizuojant finansinius duomenis ir rinkos tendencijas, o ne politinius veiksnius.",
+      },
+      {
+        text: "Skaitmeniškai vizualizuojant finansinius modelius",
+        isCorrect: false,
+        explanation:
+          "Skaitmeninė vizualizacija gali būti naudinga duomenų interpretavimui, tačiau šis atsakymas nenurodo tiesioginio ryšio su atsargų prognozavimu per dirbtinį intelektą.",
+      },
+      {
+        text: "Optimizuojant verslo strategijas pagal praeities duomenis",
+        isCorrect: false,
+        explanation:
+          "Šis variantas susijęs su verslo strategijų optimizavimu pagal praeities duomenis, tačiau atsargų prognozavimas dažniausiai remiasi ateities tendencijų analize, o ne vien tik praeities duomenų optimizavimu.",
+      },
+      {
+        text: "Identifikuojant tendencijas ir analizuojant didelius duomenų kiekius",
+        isCorrect: true,
+        explanation:
+          "Dirbtinis intelektas dažnai naudojamas identifikuojant tendencijas ir analizuojant didelius duomenų kiekius, kad būtų prognozuojamas atsargų rinkos elgesys ateityje.",
       },
     ],
   },
